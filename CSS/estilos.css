@@ -677,3 +677,10 @@ body {
         */
     }
 }
+.nosotros__heading {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.nosotros__grid {
+    text-align: center;
+}
