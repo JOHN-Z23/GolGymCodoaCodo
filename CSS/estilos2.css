@@ -26,7 +26,8 @@
     .content-carrousel figure{
         width:100%;
         height:100%
-        
+        overflow: hidden;
+        position: absolute;
     }
 
     .content-carrousel figure:nth-child(1){transform: rotateY(0deg) translateZ(400px);}
