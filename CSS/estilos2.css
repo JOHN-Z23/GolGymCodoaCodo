@@ -43,7 +43,7 @@
 
     .content-carrousel img{
         width:80%;
-}
+   }
 
 .content-carrousel img:hover{
     transform: scale(1.5);
@@ -56,4 +56,4 @@
     }to{
         transform: rotateY(360deg);
     }
-  } 
+  }
