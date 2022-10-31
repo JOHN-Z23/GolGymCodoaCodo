@@ -677,3 +677,32 @@ body {
         */
     }
 }
+.nosotros__heading {
+    text-align: center;
+}
+.nosotros__grid {
+    text-align: center;
+}
+.nosotros__clientes {
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+.contacto__contenido {
+    margin-top: 20px;
+}
+.campo_butom {
+    text-align: center;
+}
+.map_caba {
+    text-align: center;
+}
+.contacto__contenido {
+    margin-left: 260px;
+}
+.nosotros__contenido {
+    margin-top: 20px;
+}
+.nosotros__heading {
+    margin-bottom: 20px;
+}

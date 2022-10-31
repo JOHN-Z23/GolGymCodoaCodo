@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo con formularios - III</title>
+
+
+    <style>
+
+        body{
+            background: rgb(8, 70, 150);
+            color: beige;
+            text-align: center;
+        }
+
+        .containerGeoLoc, .containerIdent {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: black
+
+        }
+
+
+        label{font-size: 1.2em;}
+
+        select{padding: 5px 5px;
+        border-radius: 7px;
+        cursor: pointer;
+        }
+
+        span{
+            color: white;
+            background: red;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+
+
+
+    <form action="mostrar_datos.html" target="_blank"> <!-- al no poner el method, por defecto usa GET-->
+        <!-- Ingreso del nombre -->
+
+        <fieldset>
+            <legend><h2>Ficha de inscripcion</h2></legend>
+
+            <div class="containerIdent">
+                <h2>Identidad</h2>
+
+                <label for="nombre">Nombre: 
+                <input size="30" type="text" name="nombre" placeholder="Ingrese su nombre aqui..." required>
+                </label>
+
+                <!-- Ingreso del apellido -->
+                <label for="apellido">Apellido: 
+                <input size="30" type="text" name="apellido" placeholder="Ingrese su apellido aqui..." required>
+                </label>
+
+                <!-- Ingreso del DNI -->
+                <label for="dni">Nro DNI: 
+                <input type="number" name="dni" required></label>
+
+                <!-- Ingreso Fecha de nacimiento -->
+                <label for="fecha">Fecha de nacimiento: 
+                <input type="date" name="fecha" required></label>
+            </div>
+            
+            <!-- Ingreso de la dirección -->
+
+            <div class="containerGeoLoc">
+                        
+                <h2>Domicilio</h2>
+    
+                <label>Provincias
+                <select id="selectProvincias">
+                <option value="Elige una provincia">Elige una provincia</option>
+                </select></label>
+                <span></span>
+            
+                <label>Municipios
+                <select id="selectMunicipios">
+                <option value="Elige un municipio">Elige un municipio</option>
+                </select></label>
+                <span></span>
+            
+                <label>Localidades
+                <select id="selectLocalidades">
+                <option value="Elige una localidad">Elige una localidad</option>
+                </select></label>
+                <span></span>
+
+                <label for="direccion">Calle:
+                <input size="20" type="text" name="direccion"> </label>
+                <label for="dirnumero">Número: 
+                <input type="number" name="dirnumero"></label>
+
+        
+            <!-- Ingreso de la dirección de correo-->
+            <label for="email">email: 
+            <input type="email" name="email"></label>
+            <br><br>
+    
+            </div>
+            <script src="js/localidades.js"></script>
+
+        </fieldset>
+
+        
+
+        <fieldset>
+            <legend>Intereses personales:</legend>
+            <input type="checkbox" id="Yoga" name="intereses" value="Yoga">
+            <label for="Yoga">Yoga</label>
+
+            <input type="checkbox" id="Spinning" name="intereses" value="Spinning">
+            <label for="Spinning">Spinning</label>
+
+            <input type="checkbox" id="Musculacion" name="intereses" value="Musculacion">
+            <label for="Musculacion">Musculacion</label>
+
+            <input type="checkbox" id="otros" name="intereses" value="Otros">
+            <label for="otros">Otros</label>
+
+        </fieldset>
+
+        <fieldset>
+            <!-- Ingreso de un archivo de apto fisico-->
+            <label for="aptoFisico">Adjunte el apto fisico: </label>
+            <input type="file" name="aptoFisico">
+            <br><br>
+        </fieldset>
+
+        <!-- Comentario -->
+        <label for="comentario">Comentario:</label><br>
+        <textarea name="comentario" id="comentario" cols="40" rows="3"></textarea>
+
+        <!-- Botones para controlar el formulario -->
+        <br><br>
+        <input type="reset" value="Borrar formulario">
+        <input type="submit" value="Enviar datos">
+    </form>
+</footer>
+
+<script src="js/slider.js"></script>
+<script src="js/questions.js"></script>
+<script src="js/menu.js"></script>
+
+</body>
+</html>
